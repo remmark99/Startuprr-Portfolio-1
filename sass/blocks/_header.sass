@@ -1,0 +1,72 @@
+.header
+  text-transform: uppercase
+  background-color: gray
+  padding: 220px 0
+  text-align: center
+  &__container
+    display: flex
+    justify-content: flex-start
+  &__wrapper
+    display: inline-block
+  &__above
+    +medium
+    font-size: 18px
+    display: inline-block
+    width: 100%
+    text-align: center
+  &__slogan
+    +bold
+    font-size: 64px
+    letter-spacing: 0.45px
+    margin: 0 0 20px
+  &__under
+    +medium
+    font-size: 18px
+    color: $text-color-white
+    padding: 10px
+    background-color: #333333
+    border-radius: 4px
+    &_bold
+      +bold
+      display: inline-block
+      font-size: 17px
+      text-transform: lowercase
+      &::first-letter
+        color: $text-color-green
+        text-transform: uppercase
+  &__flex
+    display: flex
+    justify-content: center
+  &__lines
+    display: flex
+    flex-direction: column
+    margin-right: 6px
+    justify-content: center
+    &_right
+      margin-left: 6px
+  &__line
+    width: 130px
+    height: 1px
+    background-color: $text-color-white
+    &_bottom
+      margin-top: 5px
+  &__image
+    align-self: center
+    &_right
+      transform: rotate(180deg)
+  &__start
+    +bold
+    margin: 0 20px
+    font-size: 26px
+    &_green
+      color: $text-color-green
+  &__icon
+    display: block
+    font-size: 60px
+    margin: 50px auto 0
+    color: $text-color-green
+    cursor: pointer
+    transition: color .1s linear
+    align-self: center
+    &:hover
+      color: $text-color

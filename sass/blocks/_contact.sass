@@ -1,0 +1,74 @@
+.contact
+  position: relative
+  &__header
+    padding-top: 50px
+    background: $text-color
+    overflow: hidden
+  &__logo
+    display: block
+    margin: 0 auto
+  &__links
+    display: flex
+    justify-content: center
+    margin: 70px 0
+  &__link
+    width: 40px
+    height: 40px
+    background-color: $text-color
+    border: 1px solid #606060
+    border-radius: 5px
+    text-align: center
+    line-height: 40px
+    transition: all .1s linear
+    margin-right: 10px
+    cursor: pointer
+    &:hover
+      background: $text-color-green
+    &_yandex
+      &:hover
+        background: yellow
+        & i
+          color: red
+  &__icon
+    color: $text-color-white
+    font-size: 16px
+    display: block
+  &__map
+    position: relative
+    width: 100%
+    height: 500px
+  &__container
+    height: 500px
+    width: 100%
+    position: absolute
+    &_inside
+      height: 100%
+      display: flex
+      justify-content: flex-start
+      align-items: center
+  &__form
+    padding: 20px
+    display: flex
+    flex-direction: column
+    background: white
+    border-radius: 5px
+    border: 1px solid #dedede
+    z-index: 100
+  &__input
+    +medium
+    border: 1px solid #cecece
+    border-radius: 5px
+    margin-bottom: 20px
+    padding: 12px
+    width: 330px
+    transition: outline .3s linear
+    color: $text-color
+    font-size: 12px
+    &::placeholder
+      +medium
+      font-style: italic
+      color: #aaaaaa
+    &:focus
+      outline: $text-color-green auto 5px
+  &__message
+    resize: none

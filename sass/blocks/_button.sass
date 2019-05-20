@@ -1,0 +1,30 @@
+.button
+  +bold
+  font-size: 13px
+  color: $text-color-white
+  background: $text-color-green
+  padding: 12px
+  text-transform: uppercase
+  border: none
+  border-radius: 5px
+  cursor: pointer
+  transition: background .3s linear
+  text-align: center
+  &:hover
+    background: $text-color
+  &_opaque
+    background: rgba(0, 0, 0, 0)
+    border: 1px solid #dedede
+    color: #8a8a8a
+    &:hover
+      background: $text-color-green
+      color: $text-color-white
+  &__icon
+    font-size: 16px
+    margin-left: 10px
+  &_white
+    background: $text-color-white
+    color: #606060
+    border-radius: 5px
+    &:hover
+      color: $text-color-white

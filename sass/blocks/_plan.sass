@@ -1,0 +1,66 @@
+.plan
+  width: 270px
+  border: 1px solid #dedede
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+  &__name
+    +bold
+    margin-top: -18px
+    color: $text-color-white
+    background: $text-color
+    padding: 12px
+    border-radius: 5px
+    text-transform: uppercase
+    font-size: 13px
+  &__star
+    color: $text-color-green
+    font-size: 16px
+    margin-right: 10px
+    &_right
+      margin-left: 10px
+      margin-right: 0
+  &__price
+    +medium
+    color: #8a8a8a
+    font-size: 12px
+    margin-top: 20px
+    &:first-letter
+      font-size: 16px
+  &__dollars
+    +bold
+    color: $text-color
+    font-size: 60px
+    text-transform: uppercase
+  &__square
+    font-size: 14px
+    color: $text-color
+    transform: rotate(45deg)
+    margin-right: 10px
+  &__cents
+    +bold
+    position: absolute
+    left: 52%
+    top: 11%
+    font-size: 16px
+    color: $text-color
+  &__hr
+    margin: 20px 0 20px
+    height: 1px
+    width: 228px
+    background-color: #ebebeb
+  &__items
+    +medium
+    list-style-type: none
+    color: #8a8a8a
+    font-size: 14px
+    margin: 0
+    padding-left: 0
+    text-align: center
+  &__item
+    margin-top: 20px
+    &:first-child
+      margin-top: 0
+  &__buy
+    margin-bottom: 25px

@@ -1,0 +1,61 @@
+.member
+  width: 270px
+  &__top
+    overflow: hidden
+    position: relative
+    width: 100%
+    height: 270px
+  &__links
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow-y: hidden
+    top: 0
+    width: 100%
+    height: 100%
+    transition: transform 0.3s ease
+    background-color: $text-color-green
+    &_closed
+      transform: translate(0, -100%)
+    &_open
+      transform: translate(0, 0%)
+  &__bottom
+    display: flex
+    flex-direction: column
+    align-items: center
+    border: 1px solid #dedede
+    border-top: none
+  &__name
+    +bold
+    margin-top: -20px
+    z-index: 1
+    border-radius: 5px
+    color: $text-color-white
+    background: $text-color-green
+    text-transform: uppercase
+    font-size: 13px
+    padding: 13px
+    transition: background-color 0.3s ease
+    &_hover
+      background-color: $text-color
+  &__position
+    +medium
+    margin-top: 10px
+    font-size: 12px
+    color: #606060
+    padding-bottom: 15px
+    border-bottom: 1px solid #ebebeb
+    margin-bottom: 15px
+  &__contact
+    +medium
+    color: #aaaaaa
+    font-size: 12px
+    text-decoration: none
+    margin-bottom: 15px
+    line-height: 16px
+  &__icon
+    font-size: 16px
+    margin-right: 15px
+    &_phone
+      transform: scaleX(-1)

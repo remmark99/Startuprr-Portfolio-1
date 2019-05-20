@@ -3,9 +3,982 @@
 <head>
     <meta charset="UTF-8">
     <title>Startuppr</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,800,800i&display=swap" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet'/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+<header class="header" id="header">
+    <div class="header__container container">
+        <div class="header__wrapper">
+            <span class="header__above">what are you waiting for ?</span>
+            <h1 class="header__slogan">let’s be creative !</h1>
+            <h2 class="header__under"><span class="header__under_bold">Startuprr,</span> next generation & highly
+                flexible wordpress theme</h2>
+            <div class="header__flex">
+                <div class="header__lines">
+                    <div class="header__line"></div>
+                    <div class="header__line header__line_bottom"></div>
+                </div>
+                <img alt="" class="header__image" src="img/header-arrow.png">
+                <span class="header__start"><span class="header__start_green">start</span> doing that</span>
+                <img alt="" class="header__image header__image_right" src="img/header-arrow.png">
+                <div class="header__lines header__lines_right">
+                    <div class="header__line"></div>
+                    <div class="header__line header__line_bottom"></div>
+                </div>
+            </div>
+            <i class="fas fa-chevron-circle-down header__icon" id="header__icon"></i>
+        </div>
+    </div>
+</header>
+<section class="offer">
+    <header class="navbar" id="sticky">
+        <div class="container navbar__container">
+            <a href="#"><img alt="Startuppr logo" class="navbar__logo" src="img/logo.png"></a>
+            <div class="navbar__right">
+                <nav class="navbar__menu">
+                    <a class="navbar__item" href="">home</a>
+                    <a class="navbar__item" href="">portfolio</a>
+                    <a class="navbar__item" href="">blog</a>
+                    <a class="navbar__item" href="">pages</a>
+                    <a class="navbar__item" href="">features</a>
+                    <a class="navbar__item" href="">mega menu</a>
+                    <a class="navbar__item" href="">contact</a>
+                </nav>
+                <i class="navbar__icon fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="heading">
+            <div class="heading__lines">
+                <div class="heading__line"></div>
+                <div class="heading__line heading__line_bottom"></div>
+            </div>
+            <img alt="Heading arrow" class="heading__image" src="img/header-arrow.png">
+            <span class="heading__text">what we <span class="heading__text_green">offer</span></span>
+            <img alt="Heading arrow" class="heading__image heading__image_right" src="img/header-arrow.png">
+            <div class="heading__lines heading__lines_right">
+                <div class="heading__line heading__line_right"></div>
+                <div class="heading__line heading__line_right heading__line_bottom"></div>
+            </div>
+        </div>
+        <span>We offer our customers the best services & solutions, this is our main services list</span>
+        <div class="offer__list">
+            <div class="offer-item" data-aos="fade-up">
+                <i class="offer-item__icon fas fa-desktop"></i>
+                <span class="offer-item__heading">Responsive & multipurpose</span>
+                <p class="offer-item__text">Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum
+                    fringilla accumsan ornare quis.</p>
+                <button class="button button_opaque offer-item__button">read more</button>
+            </div>
+            <div class="offer-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="offer-item__icon fas fa-puzzle-piece"></i>
+                <span class="offer-item__heading">Easy customization</span>
+                <p class="offer-item__text">Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum
+                    fringilla accumsan ornare quis.</p>
+                <button class="button button_opaque offer-item__button">read more</button>
+            </div>
+            <div class="offer-item" data-aos="fade-up" data-aos-delay="400">
+                <i class=" offer-item__icon far fa-life-ring"></i>
+                <span class="offer-item__heading">Awesome friendly support</span>
+                <p class="offer-item__text">Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum
+                    fringilla accumsan ornare quis.</p>
+                <button class="button button_opaque offer-item__button">read more</button>
+            </div>
+        </div>
+    </div>
+    <div class="top" id="offer">
+        <i class="top__icon fas fa-key"></i>
+    </div>
+</section>
+<section class="features">
+    <div class="container">
+        <div class="heading heading_no-lines" data-aos="fade-right">
+            <img alt="" class="heading__image" src="img/header-arrow.png">
+            <span class="heading__text heading__text_white">AMAZING <span
+                    class="heading__text_green">FEATURES</span></span>
+            <im alt="Ipad app example" class="heading__image heading__image_right" src="img/header-arrow.png">
+        </div>
+        <span data-aos="fade-left" data-aos-delay="200">With unlimited features that we offer, we promise it’s possible to make everything that was impossible for you !</span>
+        <div class="features__wrapper">
+            <div class="features__list">
+                <div class="feature features__feature" data-aos="fade-right">
+                    <i class="feature__icon fas fa-desktop"></i>
+                    <div class="feature__wrapper">
+                        <h4 class="feature__heading">responsive & multipurpose</h4>
+                        <span class="feature__text">Proin in magna a ipsum viverra scelerisq enec turp, nunc vestibulum.</span>
+                    </div>
+                </div>
+                <div class="feature features__feature" data-aos="fade-right" data-aos-delay="200">
+                    <i class="feature__icon fas fa-puzzle-piece"></i>
+                    <div class="feature__wrapper">
+                        <h4 class="feature__heading">easy customization</h4>
+                        <span class="feature__text">Proin in magna a ipsum viverra scelerisq enec turp, nunc vestibulum.</span>
+                    </div>
+                </div>
+                <div class="feature features__feature" data-aos="fade-right" data-aos-delay="400">
+                    <i class="feature__icon fas fa-star"></i>
+                    <div class="feature__wrapper">
+                        <h4 class="feature__heading">unlimited features</h4>
+                        <span class="feature__text">Proin in magna a ipsum viverra scelerisq enec turp, nunc vestibulum.</span>
+                    </div>
+                </div>
+            </div>
+            <img alt="iPad Example" src="img/ipad.png">
+        </div>
+    </div>
+</section>
+<section class="features-grid">
+    <div class="container features-grid__container">
+        <div class="small-feature" data-aos="zoom-in">
+            <i class="small-feature__icon fas fa-desktop"></i>
+            <img alt="Banner" class="small-feature__image" src="img/banner.png">
+            <div class="small-feature__wrapper">
+                <h4 class="small-feature__heading">responsive & multipurpose</h4>
+                <span class="small-feature__under">Desktops, Tablets & Phones</span>
+                <p class="small-feature__text">Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum
+                    fringilla accumsan. Praesent arcu turpis.</p>
+            </div>
+        </div>
+        <div class="small-feature" data-aos="zoom-in">
+            <i class="small-feature__icon fas fa-puzzle-piece"></i>
+            <img alt="Banner" class="small-feature__image" src="img/banner.png">
+            <div class="small-feature__wrapper">
+                <h4 class="small-feature__heading">easy customization</h4>
+                <span class="small-feature__under">One Click Demo Content Installation</span>
+                <p class="small-feature__text">Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum
+                    fringilla accumsan. Praesent arcu turpis.</p>
+            </div>
+        </div>
+        <div class="small-feature" data-aos="zoom-in">
+            <i class="small-feature__icon fas fa-star"></i>
+            <img alt="Banner" class="small-feature__image" src="img/banner.png">
+            <div class="small-feature__wrapper">
+                <h4 class="small-feature__heading">unlimited features</h4>
+                <span class="small-feature__under">Shortcodes, Typography & Different Layouts</span>
+                <p class="small-feature__text">Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum
+                    fringilla accumsan. Praesent arcu turpis.</p>
+            </div>
+        </div>
+        <div class="small-feature" data-aos="zoom-in" data-aos-delay="200">
+            <i class="small-feature__icon fas fa-code"></i>
+            <img alt="Banner" class="small-feature__image" src="img/banner.png">
+            <div class="small-feature__wrapper">
+                <h4 class="small-feature__heading">clean & modular coding</h4>
+                <span class="small-feature__under">100% Clean, Valid & Well-Commented Coding</span>
+                <p class="small-feature__text">Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum
+                    fringilla accumsan. Praesent arcu turpis.</p>
+            </div>
+        </div>
+        <div class="small-feature" data-aos="zoom-in" data-aos-delay="200">
+            <i class="small-feature__icon fas fa-shopping-cart"></i>
+            <img alt="Banner" class="small-feature__image" src="img/banner.png">
+            <div class="small-feature__wrapper">
+                <h4 class="small-feature__heading">the best e-commerce solutions</h4>
+                <span class="small-feature__under">WooCommerce Fully Integration</span>
+                <p class="small-feature__text">Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum
+                    fringilla accumsan. Praesent arcu turpis.</p>
+            </div>
+        </div>
+        <div class="small-feature" data-aos="zoom-in" data-aos-delay="200">
+            <i class="small-feature__icon far fa-life-ring"></i>
+            <img alt="Banner" class="small-feature__image" src="img/banner.png">
+            <div class="small-feature__wrapper">
+                <h4 class="small-feature__heading">awesome friendly support</h4>
+                <span class="small-feature__under">Free Lifetime Support & Updates</span>
+                <p class="small-feature__text">Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum
+                    fringilla accumsan. Praesent arcu turpis.</p>
+            </div>
+        </div>
+        <div class="top" id="skills">
+            <i class="top__icon top__icon_rotate_45 fas fa-briefcase"></i>
+        </div>
+    </div>
+</section>
+<section class="skills">
+    <div class="container">
+        <div class="heading heading_no-lines" data-aos="fade-left">
+            <img alt="" class="heading__image" src="img/header-arrow.png">
+            <span class="heading__text heading__text_white">OUR POWERFUL <span class="heading__text_green">SKILLS</span></span>
+            <img alt="" class="heading__image heading__image_right" src="img/header-arrow.png">
+        </div>
+        <span data-aos="fade-right" data-aos-delay="200">We’re good and experienced at different things and areas and we promise about qulity of our works</span>
+        <div class="skills__wrapper">
+            <div class="skill" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill__circle"></div>
+                <p class="skill__text">web design</p>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill__circle"></div>
+                <p class="skill__text">web development</p>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill__circle"></div>
+                <p class="skill__text">speed optimization</p>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="400">
+                <div class="skill__circle"></div>
+                <p class="skill__text">customer support</p>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="500">
+                <div class="skill__circle"></div>
+                <p class="skill__text">marketing</p>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="600">
+                <div class="skill__circle"></div>
+                <p class="skill__text">advertisement</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="works">
+    <div class="container">
+        <div class="heading works__heading" data-aos="fade-right">
+            <div class="heading__lines">
+                <div class="heading__line"></div>
+                <div class="heading__line heading__line_bottom"></div>
+            </div>
+            <img alt="Heading arrow" class="heading__image" src="img/header-arrow.png">
+            <span class="heading__text">what we <span class="heading__text_green">offer</span></span>
+            <img alt="Heading arrow" class="heading__image heading__image_right" src="img/header-arrow.png">
+            <div class="heading__lines heading__lines_right">
+                <div class="heading__line heading__line_right"></div>
+                <div class="heading__line heading__line_right heading__line_bottom"></div>
+            </div>
+        </div>
+        <span data-aos="fade-left" data-aos-delay="200">We offer our customers the best services & solutions, this is our main services list</span>
+    </div>
+    <div class="works__grid">
+        <div class="work-example">
+            <div class="work-example__card">
+                <div class="work-example__face work-example__face_front"></div>
+                <div class="work-example__face work-example__face_back">
+                    <img alt="Corporate Brochure icon" class="work-example__icon" src="img/work-example.png">
+                    <h4 class="work-example__heading">Corporate Brochure</h4>
+                    <span class="work-example__span">Illustration / Print</span>
+                    <span class="work-example__likes"><i class="fas fa-heart"></i> 138</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-example">
+            <div class="work-example__card">
+                <div class="work-example__face work-example__face_front"></div>
+                <div class="work-example__face work-example__face_back">
+                    <img alt="Corporate Brochure icon" class="work-example__icon" src="img/work-example.png">
+                    <h4 class="work-example__heading">Corporate Brochure</h4>
+                    <span class="work-example__span">Illustration / Print</span>
+                    <span class="work-example__likes"><i class="fas fa-heart"></i> 138</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-example">
+            <div class="work-example__card">
+                <div class="work-example__face work-example__face_front"></div>
+                <div class="work-example__face work-example__face_back">
+                    <img alt="Corporate Brochure icon" class="work-example__icon" src="img/work-example.png">
+                    <h4 class="work-example__heading">Corporate Brochure</h4>
+                    <span class="work-example__span">Illustration / Print</span>
+                    <span class="work-example__likes"><i class="fas fa-heart"></i> 138</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-example">
+            <div class="work-example__card">
+                <div class="work-example__face work-example__face_front"></div>
+                <div class="work-example__face work-example__face_back">
+                    <img alt="Corporate Brochure icon" class="work-example__icon" src="img/work-example.png">
+                    <h4 class="work-example__heading">Corporate Brochure</h4>
+                    <span class="work-example__span">Illustration / Print</span>
+                    <span class="work-example__likes"><i class="fas fa-heart"></i> 138</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-example">
+            <div class="work-example__card">
+                <div class="work-example__face work-example__face_front"></div>
+                <div class="work-example__face work-example__face_back">
+                    <img alt="Corporate Brochure icon" class="work-example__icon" src="img/work-example.png">
+                    <h4 class="work-example__heading">Corporate Brochure</h4>
+                    <span class="work-example__span">Illustration / Print</span>
+                    <span class="work-example__likes"><i class="fas fa-heart"></i> 138</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-example">
+            <div class="work-example__card">
+                <div class="work-example__face work-example__face_front"></div>
+                <div class="work-example__face work-example__face_back">
+                    <img alt="Corporate Brochure icon" class="work-example__icon" src="img/work-example.png">
+                    <h4 class="work-example__heading">Corporate Brochure</h4>
+                    <span class="work-example__span">Illustration / Print</span>
+                    <span class="work-example__likes"><i class="fas fa-heart"></i> 138</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-example">
+            <div class="work-example__card">
+                <div class="work-example__face work-example__face_front"></div>
+                <div class="work-example__face work-example__face_back">
+                    <img alt="Corporate Brochure icon" class="work-example__icon" src="img/work-example.png">
+                    <h4 class="work-example__heading">Corporate Brochure</h4>
+                    <span class="work-example__span">Illustration / Print</span>
+                    <span class="work-example__likes"><i class="fas fa-heart"></i> 138</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-example">
+            <div class="work-example__card">
+                <div class="work-example__face work-example__face_front"></div>
+                <div class="work-example__face work-example__face_back">
+                    <img alt="Corporate Brochure icon" class="work-example__icon" src="img/work-example.png">
+                    <h4 class="work-example__heading">Corporate Brochure</h4>
+                    <span class="work-example__span">Illustration / Print</span>
+                    <span class="work-example__likes"><i class="fas fa-heart"></i> 138</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-example">
+            <div class="work-example__card">
+                <div class="work-example__face work-example__face_front"></div>
+                <div class="work-example__face work-example__face_back">
+                    <img alt="Corporate Brochure icon" class="work-example__icon" src="img/work-example.png">
+                    <h4 class="work-example__heading">Corporate Brochure</h4>
+                    <span class="work-example__span">Illustration / Print</span>
+                    <span class="work-example__likes"><i class="fas fa-heart"></i> 138</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-example">
+            <div class="work-example__card">
+                <div class="work-example__face work-example__face_front"></div>
+                <div class="work-example__face work-example__face_back">
+                    <img alt="Corporate Brochure icon" class="work-example__icon" src="img/work-example.png">
+                    <h4 class="work-example__heading">Corporate Brochure</h4>
+                    <span class="work-example__span">Illustration / Print</span>
+                    <span class="work-example__likes"><i class="fas fa-heart"></i> 138</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-example">
+            <div class="work-example__card">
+                <div class="work-example__face work-example__face_front"></div>
+                <div class="work-example__face work-example__face_back">
+                    <img alt="Corporate Brochure icon" class="work-example__icon" src="img/work-example.png">
+                    <h4 class="work-example__heading">Corporate Brochure</h4>
+                    <span class="work-example__span">Illustration / Print</span>
+                    <span class="work-example__likes"><i class="fas fa-heart"></i> 138</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-example">
+            <div class="work-example__card">
+                <div class="work-example__face work-example__face_front"></div>
+                <div class="work-example__face work-example__face_back">
+                    <img alt="Corporate Brochure icon" class="work-example__icon" src="img/work-example.png">
+                    <h4 class="work-example__heading">Corporate Brochure</h4>
+                    <span class="work-example__span">Illustration / Print</span>
+                    <span class="work-example__likes"><i class="fas fa-heart"></i> 138</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="button works__button">view all works</div>
+        <div class="top top_lower" id="facts">
+            <i class="top__icon top__icon_rotate_45 fas fa-briefcase"></i>
+        </div>
+    </div>
+</section>
+<section class="facts">
+    <div class="container">
+        <div class="heading heading_no-lines" data-aos="fade-left">
+            <img alt="" class="heading__image" src="img/header-arrow.png">
+            <span class="heading__text heading__text_white">COMPANY <span
+                    class="heading__text_green">FACTS</span></span>
+            <img alt="" class="heading__image heading__image_right" src="img/header-arrow.png">
+        </div>
+        <span data-aos="fade-right" data-aos-delay="200">We do love to work and increase our counter numbers, this is what we’ve done till now</span>
+        <div class="facts__wrapper">
+            <div class="facts__fact fact" data-aos="fade-up" data-aos-delay="100">
+                <span class="fact__number"><i class="fact__square fas fa-square"></i>218<i
+                        class="fact__square fact__square_right fas fa-square"></i></span>
+                <div class="fact__hr">
+                    <div class="fact__line"></div>
+                    <i class="fact__icon far fa-check-square"></i>
+                    <div class="fact__line fact__line_right"></div>
+                </div>
+                <span class="fact__text">completed projects</span>
+            </div>
+            <div class="facts__fact fact" data-aos="fade-up" data-aos-delay="200">
+                <span class="fact__number"><i class="fact__square fas fa-square"></i>360<i
+                        class="fact__square fact__square_right fas fa-square"></i></span>
+                <div class="fact__hr">
+                    <div class="fact__line"></div>
+                    <i class="fact__icon fas fa-hourglass-half"></i>
+                    <div class="fact__line fact__line_right"></div>
+                </div>
+                <span class="fact__text">hours of work / month</span>
+            </div>
+            <div class="facts__fact fact" data-aos="fade-up" data-aos-delay="300">
+                <span class="fact__number"><i class="fact__square fas fa-square"></i>135<i
+                        class="fact__square fact__square_right fas fa-square"></i></span>
+                <div class="fact__hr">
+                    <div class="fact__line"></div>
+                    <i class="fact__icon fas fa-ticket-alt"></i>
+                    <div class="fact__line fact__line_right"></div>
+                </div>
+                <span class="fact__text">solved tickets</span>
+            </div>
+            <div class="facts__fact fact" data-aos="fade-up" data-aos-delay="400">
+                <span class="fact__number"><i class="fact__square fas fa-square"></i>174<i
+                        class="fact__square fact__square_right fas fa-square"></i></span>
+                <div class="fact__hr">
+                    <div class="fact__line"></div>
+                    <i class="fact__icon fas fa-thumbs-up"></i>
+                    <div class="fact__line fact__line_right"></div>
+                </div>
+                <span class="fact__text">satisfied clients</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="purchase">
+    <div class="container purchase__container">
+        <span class="purchase__text"
+              data-aos="fade-right">are you satisfied with unlimited features that we offer?</span>
+        <div class="purchase__buttons" data-aos="fade-left" data-aos-delay="200">
+            <button class="button button_white purchase__button">purchase it now</button>
+            <button class="button button_white purchase__button">contact us now</button>
+        </div>
+    </div>
+</section>
+<section class="members">
+    <div class="container">
+        <div class="heading" data-aos="fade-down">
+            <i class="heading__arrow heading__arrow_left fas fa-caret-square-right"></i>
+            <div class="heading__lines">
+                <div class="heading__line"></div>
+                <div class="heading__line heading__line_bottom"></div>
+            </div>
+            <img alt="Heading arrow" class="heading__image" src="img/header-arrow.png">
+            <span class="heading__text">what we <span class="heading__text_green">offer</span></span>
+            <img alt="Heading arrow" class="heading__image heading__image_right" src="img/header-arrow.png">
+            <div class="heading__lines heading__lines_right">
+                <div class="heading__line heading__line_right"></div>
+                <div class="heading__line heading__line_right heading__line_bottom"></div>
+            </div>
+            <i class="heading__arrow heading__arrow_right fas fa-caret-square-right"></i>
+        </div>
+        <span data-aos="fade-up" data-aos-delay="200">We offer our customers the best services & solutions, this is our main services list</span>
+        <div class="members__wrapper owl-carousel members__owl-carousel">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member__top">
+                    <img alt="" src="http://placehold.jp/270x270.png">
+                    <div class="member__links member__links_closed">
+                        <div class="member__link link"><i class="link__icon fab fa-twitter"></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-facebook-f"></i></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-google-plus-g"></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-vimeo-v"></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-dribbble"></i></div>
+                    </div>
+                </div>
+                <div class="member__bottom">
+                    <div class="member__name">alexis simpson</div>
+                    <div class="member__position">CEO & Developer</div>
+                    <a class="member__contact" href="mailto:s.cole@unique.com"><i class=" member__icon fas fa-envelope"></i>
+                        a.simpson@unique.com</a>
+                    <a class="member__contact" href="tel:1-911-772-2211"><i class=" member__icon member__icon_phone fas fa-phone"></i> +1
+                        911 (77) 222-1111</a></div>
+            </div>
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member__top">
+                    <img alt="" src="http://placehold.jp/270x270.png">
+                    <div class="member__links member__links_closed">
+                        <div class="member__link link"><i class="link__icon fab fa-twitter"></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-facebook-f"></i></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-google-plus-g"></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-vimeo-v"></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-dribbble"></i></div>
+                    </div>
+                </div>
+                <div class="member__bottom">
+                    <div class="member__name">steven cole</div>
+                    <div class="member__position">User Interface Designer</div>
+                    <a class="member__contact" href="mailto:s.cole@unique.com"><i class=" member__icon fas fa-envelope"></i>
+                        s.cole@unique.com</a>
+                    <a class="member__contact" href="tel:1-911-772-2211"><i class=" member__icon member__icon_phone fas fa-phone"></i> +1
+                        911 (77) 222-1111</a></div>
+            </div>
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+                <div class="member__top">
+                    <img alt="" src="http://placehold.jp/270x270.png">
+                    <div class="member__links member__links_closed">
+                        <div class="member__link link"><i class="link__icon fab fa-twitter"></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-facebook-f"></i></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-google-plus-g"></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-vimeo-v"></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-dribbble"></i></div>
+                    </div>
+                </div>
+                <div class="member__bottom">
+                    <div class="member__name">Frank piener</div>
+                    <div class="member__position">Sales Manager</div>
+                    <a class="member__contact" href="mailto:s.cole@unique.com"><i class=" member__icon fas fa-envelope"></i> f.piener@unique.com</a>
+                    <a class="member__contact" href="tel:1-911-772-2211"><i class=" member__icon member__icon_phone fas fa-phone"></i> +1
+                        911 (77) 222-1111</a></div>
+            </div>
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+                <div class="member__top">
+                    <img alt="" src="http://placehold.jp/270x270.png">
+                    <div class="member__links member__links_closed">
+                        <div class="member__link link"><i class="link__icon fab fa-twitter"></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-facebook-f"></i></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-google-plus-g"></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-vimeo-v"></i></div>
+                        <div class="member__link link"><i class="link__icon fab fa-dribbble"></i></div>
+                    </div>
+                </div>
+                <div class="member__bottom">
+                    <div class="member__name">ashley lennon</div>
+                    <div class="member__position">IT Specialist</div>
+                    <a class="member__contact" href="mailto:s.cole@unique.com"><i class=" member__icon fas fa-envelope"></i> a.lennon@unique.com</a>
+                    <a class="member__contact" href="tel:1-911-772-2211"><i class=" member__icon member__icon_phone fas fa-phone"></i> +1
+                        911 (77) 222-1111</a></div>
+            </div>
+        </div>
+        <div class="top top_lower top_dark">
+            <i class=" top__icon top__icon_rotate_45 fas fa-quote-left"></i></i>
+        </div>
+    </div>
+</section>
+<section class="quotes">
+    <div class="container">
+        <div class="quote__owl-carousel owl-carousel">
+            <div class="quote">
+                <div class="quote__person" data-aos="fade-right"><span class="quote__name">alexis simpson</span> - CEO &
+                    Developer
+                </div>
+                <p class="quote__text" data-aos="fade-left" data-aos-delay="200"><i class="fas fa-quote-left"></i> Lorem
+                    ipsum dolor sit amet, laudantium, totam
+                    rem. Morbi sagittis, sem quis lacinia
+                    faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo consequat magna, id molestie
+                    ipsum
+                    volutpat quis. <i class="fas fa-quote-right"></i></p>
+            </div>
+            <div class="quote">
+                <div class="quote__person" data-aos="fade-right"><span class="quote__name">viktor doska</span> - Student
+                </div>
+                <p class="quote__text" data-aos="fade-left" data-aos-delay="200"><i class="fas fa-quote-left"></i> Hey,
+                    if you are reading this you are probably
+                    HR from Yandex, if that is the case could you please give me a chance to be an intern for the summer
+                    at your company? <i class="fas fa-quote-right"></i></p>
+            </div>
+        </div>
+    </div>
+    <div class="quotes__buttons" data-aos="fade-up" data-aos-delay="400">
+        <i class="quotes__button quotes__button_left fas fa-caret-square-left"></i>
+        <i class="quotes__button quotes__button_right fas fa-caret-square-right"></i>
+    </div>
+</section>
+<section class="brands">
+    <i class="brands__button brands__button_left fas fa-caret-square-left"></i>
+    <div class="container brands__container">
+        <div class="owl-carousel brands__owl-carousel">
+            <div class="brand"><img alt="" class="brand__image" src="img/brand1.png"></div>
+            <div class="brand"><img alt="" class="brand__image" src="img/brand2.png"></div>
+            <div class="brand"><img alt="" class="brand__image" src="img/brand3.png"></div>
+            <div class="brand"><img alt="" class="brand__image" src="img/brand4.png"></div>
+        </div>
+    </div>
+    <i class="brands__button brands__button_right fas fa-caret-square-right"></i>
+</section>
+<section class="prices">
+    <div class="container">
+        <div class="heading" data-aos="fade-left">
+            <div class="heading__lines">
+                <div class="heading__line"></div>
+                <div class="heading__line heading__line_bottom"></div>
+            </div>
+            <img alt="Heading arrow" class="heading__image" src="img/header-arrow.png">
+            <span class="heading__text">REAL CHEAP <span class="heading__text_green">PRICES</span></span>
+            <img alt="Heading arrow" class="heading__image heading__image_right" src="img/header-arrow.png">
+            <div class="heading__lines heading__lines_right">
+                <div class="heading__line heading__line_right"></div>
+                <div class="heading__line heading__line_right heading__line_bottom"></div>
+            </div>
+        </div>
+        <span data-aos="fade-right" data-aos-delay="200">We offer all our services in real low prices in comparison with similar companies</span>
+        <div class="prices__list">
+            <div class="plan" data-aos="fade-up" data-aos-delay="100">
+                <span class="plan__name">standard plan</span>
+                <span class="plan__price">$ <span class="plan__dollars">19</span> <i
+                        class="plan__square fas fa-square"></i><span class="plan__cents">99</span>  Monthly</span>
+                <div class="plan__hr"></div>
+                <ul class="plan__items">
+                    <li class="plan__item">5 Projects</li>
+                    <li class="plan__item">5 GB Storage</li>
+                    <li class="plan__item">Unlimited Users</li>
+                    <li class="plan__item">10 GB Bandwith</li>
+                    <li class="plan__item">Enhanced Security</li>
+                </ul>
+                <div class="plan__hr"></div>
+                <button class=" button plan__buy">sign up now</button>
+            </div>
+            <div class="plan" data-aos="fade-up" data-aos-delay="200">
+                <span class="plan__name">premium plan</span>
+                <span class="plan__price">$ <span class="plan__dollars">29</span> <i
+                        class="plan__square fas fa-square"></i><span class="plan__cents">99</span>  Monthly</span>
+                <div class="plan__hr"></div>
+                <ul class="plan__items">
+                    <li class="plan__item">10 Projects</li>
+                    <li class="plan__item">15 GB Storage</li>
+                    <li class="plan__item">Unlimited Users</li>
+                    <li class="plan__item">20 GB Bandwith</li>
+                    <li class="plan__item">Enhanced Security</li>
+                </ul>
+                <div class="plan__hr"></div>
+                <button class="button plan__buy">sign up now</button>
+            </div>
+            <div class="plan" data-aos="fade-up" data-aos-delay="300">
+                <span class="plan__name"><i class="plan__star fas fa-star"></i>advanced plan<i
+                        class="plan__star_right plan__star fas fa-star"></i></span>
+                <span class="plan__price">$ <span class="plan__dollars">49</span> <i
+                        class="plan__square fas fa-square"></i><span class="plan__cents">99</span>  Monthly</span>
+                <div class="plan__hr"></div>
+                <ul class="plan__items">
+                    <li class="plan__item">15 Projects</li>
+                    <li class="plan__item">30 GB Storage</li>
+                    <li class="plan__item">Unlimited Users</li>
+                    <li class="plan__item">50 GB Bandwith</li>
+                    <li class="plan__item">Enhanced Security</li>
+                </ul>
+                <div class="plan__hr"></div>
+                <button class="button plan__buy">sign up now</button>
+            </div>
+            <div class="plan" data-aos="fade-up" data-aos-delay="400">
+                <span class="plan__name">ultimate plan</span>
+                <span class="plan__price">$ <span class="plan__dollars">99</span> <i
+                        class="plan__square fas fa-square"></i><span class="plan__cents">99</span>  Monthly</span>
+                <div class="plan__hr"></div>
+                <ul class="plan__items">
+                    <li class="plan__item">Unlimited Projects</li>
+                    <li class="plan__item">Unlimited Storage</li>
+                    <li class="plan__item">Unlimited Users</li>
+                    <li class="plan__item">Unlimited Bandwith</li>
+                    <li class="plan__item">Enhanced Security</li>
+                </ul>
+                <div class="plan__hr"></div>
+                <button class="button plan__buy">sign up now</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="purchase purchase_image">
+    <div class="container purchase__container">
+        <span class="purchase__text purchase__text_gray">UNIQUE! We Do <i class="purchase__icon fas fa-heart"></i> It And Hope You Too</span>
+        <button class="button">purchase it now <i class="button__icon fas fa-shopping-cart"></i></button>
+    </div>
+</section>
+<section class="contact">
+    <header class="contact__header">
+        <div class="container">
+            <img alt="Startuppr logo" class="contact__logo" data-aos="zoom-in" src="img/logo.png">
+            <div class="contact__links" data-aos="zoom-in">
+                <div class="contact__link">
+                    <i class="contact__icon fab fa-facebook-f"></i>
+                </div>
+                <div class="contact__link">
+                    <i class="contact__icon fab fa-twitter"></i>
+                </div>
+                <div class="contact__link">
+                    <i class="contact__icon fab fa-pinterest-p"></i>
+                </div>
+                <div class="contact__link">
+                    <i class="contact__icon fab fa-drupal"></i>
+                </div>
+                <div class="contact__link">
+                    <i class="contact__icon fab fa-vimeo-v"></i>
+                </div>
+                <div class="contact__link">
+                    <i class="contact__icon fab fa-youtube"></i>
+                </div>
+                <div class="contact__link">
+                    <i class="contact__icon fab fa-linkedin-in"></i>
+                </div>
+                <div class="contact__link">
+                    <i class="contact__icon fab fa-dribbble"></i>
+                </div>
+                <div class="contact__link">
+                    <i class="contact__icon fab fa-slack"></i>
+                </div>
+                <div class="contact__link contact__link_yandex">
+                    <i class="contact__icon fab fa-yandex"></i>
+                </div>
+                <div class="contact__link">
+                    <i class="contact__icon fab fa-stumbleupon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="contact__map" id="map">
+        <div class="container contact__container">
+            <div class="container contact__container_inside">
+                <form action="" class="contact__form">
+                    <input class="contact__input" placeholder="Name" type="text">
+                    <input class="contact__input" placeholder="Email Address" type="text">
+                    <textarea class="contact__input contact__message" cols="30" id="" name="" placeholder="Message..."
+                              rows="10"></textarea>
+                    <button class="contact__submit button">Sumbit message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="top top_lower" id="end">
+        <i class="top__icon top__icon_rotate_45 fas fa-caret-up"></i>
+    </div>
+</section>
+<footer class="footer">
+    <span class="footer__text">Copyright © 2014 Startuprr, All Rights Reserved.</span>
+</footer>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/progressbar.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script defer>
+    $(document).ready(() => {
+        AOS.init();
 
+        //Adding map with a pointer
+        let geojson = {
+            type: 'FeatureCollection',
+            features: [{
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-73.9950267, 40.729759]
+                },
+                properties: {
+                    title: 'Startuppr',
+                    description: '200 Church St, New York, NY 10013, USA'
+                }
+            }]
+        };
+
+        mapboxgl.accessToken = 'pk.eyJ1IjoicmVtbWFyazk5OSIsImEiOiJjam1ocTJ1MW4yZjZhM3ZsaDBwYXRxd3FuIn0.hAlMGVhoN6VT38mDK1g8SA';
+        let map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/light-v9',
+            center: [-73.9950267, 40.729759],
+            zoom: 12
+        });
+
+        geojson.features.forEach(function (marker) {
+
+            // create a HTML element for each feature
+            let el = document.createElement('div');
+            el.className = 'marker';
+
+            // make a marker for each feature and add to the map
+            new mapboxgl.Marker(el)
+                .setLngLat(marker.geometry.coordinates)
+                .setPopup(new mapboxgl.Popup({offset: 25}) // add popups
+                    .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+                .addTo(map);
+        });
+
+        // Add owl carousel to Members section
+        let owlMembers = $('.members__owl-carousel');
+        owlMembers.owlCarousel({
+            items: 4,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 7000,
+            autoplayHoverPause: true
+        });
+
+        // Set event listeners for buttons for members owl carousel
+        $(".heading__arrow_left").on('click', () => {
+            owlMembers.trigger('prev.owl.carousel');
+        });
+
+        $(".heading__arrow_right").on('click', () => {
+            owlMembers.trigger('next.owl.carousel');
+        });
+
+        // Add owl carousel to Quotes section
+        let owlQuotes = $('.quote__owl-carousel');
+        owlQuotes.owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 7000,
+            autoplayHoverPause: true
+        });
+
+        // Set event listeners for buttons for quotes owl carousel
+        $(".quotes__button_left").on('click', () => {
+            owlQuotes.trigger('prev.owl.carousel');
+        });
+
+        $(".quotes__button_right").on('click', () => {
+            owlQuotes.trigger('next.owl.carousel');
+        });
+
+        // Add owl carousel to Brands section
+        let owlBrands = $('.brands__owl-carousel');
+        owlBrands.owlCarousel({
+            items: 4,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 7000,
+            autoplayHoverPause: true,
+            margin: 30
+        });
+
+        // Set event listeners for buttons for brands owl carousel
+        $(".brands__button_left").on('click', () => {
+            owlBrands.trigger('prev.owl.carousel');
+        });
+
+        $(".brands__button_right").on('click', () => {
+            owlBrands.trigger('next.owl.carousel');
+        });
+
+        // Scroll to the first section
+        let scrollStart = $("#header__icon");
+        let header = $(".offer");
+        scrollStart.on("click", () => {
+            $("html").animate({
+                scrollTop: Math.ceil(header.offset().top)
+            }, 1000);
+        });
+
+        // Scroll to features section
+        let scrollFeatures = $("#offer");
+        let features = $(".features");
+        scrollFeatures.on('click', () => {
+            $("html").animate({
+                // Subtracting 100 because of sticky navbar
+                scrollTop: Math.ceil(features.offset().top) - 100
+            }, 500)
+        });
+
+        // Scroll to skills section
+        let scrollSkills = $("#skills");
+        let skills = $(".skills");
+        scrollSkills.on('click', () => {
+            $("html").animate({
+                scrollTop: Math.ceil(skills.offset().top) - 100
+            }, 500)
+        });
+
+        // Scroll to facts section
+        let scrollFacts = $("#facts");
+        let facts = $(".facts");
+        scrollFacts.on('click', () => {
+            $("html").animate({
+                scrollTop: Math.ceil(facts.offset().top) - 100
+            }, 500)
+        });
+
+        // Scroll back to the top
+        let scrollEnd = $("#end");
+        scrollEnd.on("click", () => {
+            $("html").animate({
+                scrollTop: 0
+            }, 3000)
+        });
+
+        // Make navbar sticky
+        $("#sticky").sticky({
+            topSpacing: 0,
+            zIndex: 101
+        });
+
+        // Add animation on member element hover
+        let members = $(".member__top");
+        members.on('mouseenter', function () {
+            let slider = $("div", this)[0];
+            if (slider.classList.contains('member__links_closed')) {
+                slider.classList.remove('member__links_closed');
+                slider.classList.add('member__links_open');
+            }
+            let name = this.nextElementSibling.firstElementChild;
+            $(name).addClass('member__name_hover');
+        });
+
+        members.on('mouseleave', function () {
+            let slider = $("div", this)[0];
+            if (slider.classList.contains('member__links_open')) {
+                slider.classList.remove('member__links_open');
+                slider.classList.add('member__links_closed');
+            }
+            let name = this.nextElementSibling.firstElementChild;
+            $(name).removeClass('member__name_hover');
+        });
+
+        let circle = [...document.getElementsByClassName('skill__circle')];
+        let values = [75, 92, 68, 100, 83, 50];
+        circle.forEach(node => {
+            let test = new ProgressBar.Circle(node, {
+                strokeWidth: 3,
+                color: '#00a99d',
+                trailColor: '#e4e4e4',
+                text: {
+                    value: values[circle.indexOf(node)] + "%",
+                    style: {
+                        transform: values[circle.indexOf(node)] === 100 ? "rotate(90deg) translate(-35%)" : "rotate(90deg) translate(-28%)",
+                        color: '#e4e4e4',
+                        fontWeight: '800',
+                        fontSize: '26px'
+                    }
+                }
+            });
+            test.animate(values[circle.indexOf(node)] / 100);
+        });
+
+        let example = document.querySelectorAll('.work-example');
+        example.forEach(node => {
+            let card = node.querySelector('.work-example__card');
+            // node.addEventListener('mouseenter', () => {
+            //     card.classList.add('work-example__card_is-flipped');
+            // });
+            //
+            // node.addEventListener('mouseleave', () => {
+            //     card.classList.remove('work-example__card_is-flipped');
+            // });
+
+            node.addEventListener('mouseenter', () => {
+                card.classList.toggle('work-example__card_is-flipped');
+            })
+        });
+
+
+        let image = document.querySelector('.member__top');
+        image.addEventListener('mouseenter', () => {
+            if (slider.classList.contains('member__links_closed')) {
+                slider.classList.remove('member__links_closed');
+                slider.classList.add('member__links_open');
+            }
+        });
+
+        image.addEventListener('mouseleave', () => {
+            if (slider.classList.contains('member__links_open')) {
+                slider.classList.remove('member__links_open');
+                slider.classList.add('member__links_closed');
+            }
+        });
+    });
+</script>
 </body>
 </html>
